@@ -44,8 +44,8 @@ Get the timing diagram for different inputs using VWF file.
 ## Program:
 ```
 Program to implement the given logic function using NAND and NOR gates and to verify its operations in quartus using Verilog programming.
-Developed by: Ashwin Raaj.S
-RegisterNumber: 212221230008
+Developed by: P.Sarveshvaran
+RegisterNumber: 212221230090
 ```
 ```
 module cc_1(a,b,c,f);
