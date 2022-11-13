@@ -68,6 +68,6 @@ assign F = ~S;
 endmodule
 ~~~
 ## Output:
-
+![output](d4'1.png)
 ## Result:
 Thus the given logic functions are implemented using NAND and NOR gates and their operations are verified using Verilog programming.
