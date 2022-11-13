@@ -27,52 +27,42 @@ NOR gate is actually a combination of two logic gates: OR gate followed by NOT g
 F=(((C.B'.A)+(D.C'.A)+(C.B'.A))')'
 
 ## Logic Diagram
-## Procedure
-~~~
-1.Create a project with required entities.
-2.Create a module along with respective file name.
-3.Run the respective programs for the given boolean equations.
-4.Run the module and get the respective RTL outputs.
-5.Create university program(VWF) for getting timing diagram.
-6.Give the respective inputs for timing diagram and obtain the results.
+![output](ss1.png)
+## Procedure:
+### Step-1:
+Install quartus and its components.
+
+### Step-2:
+Create a new project and enter the required code in verilog HDL file.
+
+### Step-3:
+Compile the program and view the rtl file for logic diagram.
+
+### Step-4:
+Get the timing diagram for different inputs using VWF file.
 
 ## Program:
-~~~
+```
 Program to implement the given logic function using NAND and NOR gates and to verify its operations in quartus using Verilog programming.
-Developed by: P.Sarveshvaran
-RegisterNumber: 212221230090
-
-Using NAND Operation:
-
-module combine1(A,B,C,D,F);
-input A,B,C,D;
-output F;
-wire P,Q,R;
-assign P = C&(~B)&(~A);
-assign Q = D&(~C)&(~A);
-assign R = (~C)&B&(~A);
-assign F = (~P&~Q&~R);
+Developed by: Ashwin Raaj.S
+RegisterNumber: 212221230008
+```
+```
+module cc_1(a,b,c,f);
+input a,b,c;
+output f;
+wire p,q,r;
+assign p=(~a & b & c);
+assign q=(a & ~b & c);
+assign r=(a & b & ~c);
+assign f=((p |q|r)); 
 endmodule
-
-Using NOR Operation:
-
-module combine2(A,B,C,D,F);
-input A,B,C,D;
-output F;
-wire P,Q,R,S;
-assign P = C&(~B)&A;
-assign Q = D&(~C)&A;
-assign R = C&(~B)&A;
-assign S = ~(P|Q|R);
-assign F = ~S;
-endmodule
-~~~
+```
+## RTL realization
 ## Output:
-![output](d4'1.png)
-![output](d4'2.png)
-![output](d4'3.png)
-![output](d4'4.png)
-![output](d4'5.png)
-![output](d4'6.png)
+## RTL
+![output](ss2.png)
+## Timing Diagram
+![output](ss3.png)
 ## Result:
 Thus the given logic functions are implemented using NAND and NOR gates and their operations are verified using Verilog programming.
