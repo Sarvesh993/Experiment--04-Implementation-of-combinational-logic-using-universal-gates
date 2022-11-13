@@ -67,12 +67,6 @@ assign S = ~(P|Q|R);
 assign F = ~S;
 endmodule
 ~~~
-Program to implement the given logic function using NAND and NOR gates and to verify its operations in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
-## RTL realization
-
 ## Output:
 ![output](d4'1.png)
 ![output](d4'2.png)
