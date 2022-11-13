@@ -68,15 +68,6 @@ assign F = ~S;
 endmodule
 ~~~
 ## Output:
-RTL
-![output](d4'1.png)
-![output](d4'2.png)
-![output](d4'3.png)
-![output](d4'3.png)
-Timing Diagram
-![output](d4'4.png)
-![output](d4'5.png)
-![output](d4'6.png)
 
 ## Result:
 Thus the given logic functions are implemented using NAND and NOR gates and their operations are verified using Verilog programming.
